@@ -1,16 +1,17 @@
 #!/bin/bash
 # Installation guide
 # OS Ubuntu 16.04 64bit
+# Caffe 1.0
 # Jetpack 3.2
 # Jetson TX2
 installguide="Installation guide"
 installos="Ubuntu 16.04 64bit"
-installopencv="OpenCV 3.4.0"
+installopencv="Caffe 1.0"
 installjetpack="Jetpack 3.2"
 installjetson="Jetson TX2"
 echo "\033[31m****${installguide}\033[0m****"
 echo "OS:              \033[32m${installos}\033[0m"
-echo "OpenCV version:  \033[33m${installopencv}\033[0m"
+echo "Caffe version:   \033[33m${installopencv}\033[0m"
 echo "Jetpack version: \033[34m${installjetpack}\033[0m"
 echo "Jetson Type:     \033[35m${installjetson}\033[0m"
 
