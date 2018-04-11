@@ -24,3 +24,21 @@ $ python3 -c 'import cv2; print(cv2.__version__)'
 <result 3.4.0 here>
 $ python2 -c 'import cv2; print(cv2.__version__)'
 <result 3.4.0 here>
+```
+
+## Install Caffe
+Before installation, please check you have correctly installed jetpack3.2 and have installed git.
+Please add cuda path to your `$PATH` in `.bashrc`
+```bash
+echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
+```
+
+After setting environment variables, just run `Install_Caffe_JetsonTX2.sh`.
+
+```bash
+$ chmod +x Install_Caffe_JetsonTX2.sh
+$ ./Install_Caffe_JetsonTX2.sh
+```
+
+The modified Caffe `Makefile.config` and `Makefile` has been copied to caffe root directory.

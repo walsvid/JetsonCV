@@ -78,6 +78,7 @@ sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
 git clone https://github.com/BVLC/caffe.git
 cd caffe
 cp ${script_dir}"caffe/Makefile.config" .
+cp ${script_dir}"caffe/Makefile" .
 ################################################################################
 # Compile Caffe.                                                               #
 ################################################################################
