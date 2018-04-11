@@ -143,7 +143,7 @@ git checkout 3.4.0
 mkdir build
 cd build
 ################################################################################
-# Make OpenCV.                                                                 #
+# Compile OpenCV.                                                              #
 ################################################################################
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local \
         -D WITH_CUDA=ON -D CUDA_ARCH_BIN="6.2" -D CUDA_ARCH_PTX="" \
