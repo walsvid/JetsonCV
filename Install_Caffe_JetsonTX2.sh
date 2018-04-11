@@ -34,6 +34,7 @@ select yn in "y" "n"; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+script_dir=$(pwd)
 cd $HOME
 ################################################################################
 # Basic dependencies for JetPack 3.2 on Jetson TX2.                            #
@@ -70,3 +71,14 @@ sudo pip2 install numpy \
 # Dependencies for Google glog and imdb.                                       #
 ################################################################################
 sudo apt-get install -y libgflags-dev libgoogle-glog-dev liblmdb-dev
+################################################################################
+# Download caffe from git.                                                     #
+################################################################################
+git clone https://github.com/BVLC/caffe.git
+cd caffe
+cp ${script_dir}"caffe/Makefile.config" .
+################################################################################
+# Compile Caffe.                                                               #
+################################################################################
+make clean
+make all -j8
