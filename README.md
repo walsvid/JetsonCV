@@ -42,3 +42,19 @@ $ ./Install_Caffe_JetsonTX2.sh
 ```
 
 The modified Caffe `Makefile.config` and `Makefile` has been copied to caffe root directory.
+
+## Install Tensorflow
+```bash
+cd ./tensorflow/Jetpack-3.2/1.6
+
+sudo pip2 install tensorflow-1.6.0rc1-cp27-cp27mu-linux_aarch64.whl
+sudo pip3 install tensorflow-1.6.0rc1-cp35-cp35m-linux_aarch64.whl
+```
+
+To verify the installation:
+```bash
+python3 -c 'import tensorflow as tf; print(tf.__version__)'
+<result 1.6.0 here>
+$ python2 -c 'import tensorflow as tf; print(tf.__version__)'
+<result 1.6.0 here>
+```
