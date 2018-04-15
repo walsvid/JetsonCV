@@ -1,10 +1,14 @@
 # JetsonCV
 Installation script for computer vision libraries using in NVIDIA Jetson.
 
-|    OS   | Ubuntu 16.04 64bit |
-|:-------:|:------------------:|
-| Jetpack |  3.2               |
-| Jetson  | TX2                |
+|Framework |      Version       |
+|:--------:|:------------------:|
+|    OS    | Ubuntu 16.04 64bit |
+| Jetpack  | 3.2                |
+| Jetson   | TX2                |
+|  OpenCV  | 3.4                |
+|  Caffe   | 1.0                |
+|Tensorflow| 1.6                |
 
 ## Install OpenCV
 Before installation, please check you have correctly installed jetpack3.2.
