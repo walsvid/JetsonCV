@@ -62,3 +62,37 @@ python3 -c 'import tensorflow as tf; print(tf.__version__)'
 $ python2 -c 'import tensorflow as tf; print(tf.__version__)'
 <result 1.6.0 here>
 ```
+
+
+
+
+
+$$
+\sum_{k} \frac{1}{N_{k}^{c}} \sum_{i \in A_{k}} l_{c} (p_i, g_i) + \lambda \sum_{k} \frac{1}{N_{k}^{r}} \sum_{i \in A_{k}} \mathbf{1}(g_i=1)l_{r}(b_i,t_i)
+$$
+这里:
+
+$k = index(\{\mathit{M}\}_1^k)$
+
+$M\in {M_1,M_2,M_3}$
+
+$A_{k}$ is the set of anchors in $M_k$.
+
+
+$\mathbf{1}()$ is Indicator function
+
+$l_c$ is face classiﬁcation loss
+
+$p_i$ predicted category
+
+$g_i$ ground truth
+
+$l_r$ represents the bounding box regression loss
+
+$b_i$ predicted bounding box
+
+$t_i$ target box
+
+$N_{k}^{c}$ is the number of anchors in module $M_k$
+
+$N_{k}^{r}=\sum_{i \in A_{k}}\mathbf{1}(g_i=1)$ is the number of anchors in module $M_k$, limits the regression loss only to the positively assigned anchors
